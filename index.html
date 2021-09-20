@@ -14,14 +14,51 @@
 </head>
 <body>
 
-  Home
-  About
-  Contact
-  Blog
-  Careers
+  <nav class="bg-white mx-auto p-5 fixed relative mb-8 w-full">
+    <div class="flex justify-between">
+      <div class="logo">
+        <img src="images/logo.svg" alt="easybank logo">
+      </div>
+      <!-- Desktop links -->
+      <div class="flex items-center hidden md:flex">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+       <!-- Mobile menu button -->
+      <div class="md:hidden flex items-center">
+        <button class="outline-none mobile-menu-button">
+          <svg
+            class="w-6 h-6 text-gray-500"
+            x-show="!showMenu"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div> 
 
-  Request Invite
-
+ <!-- Mobile/Tablet Links -->
+      <div class="mobile-menu items-center hidden absolute py-2 z-10 bg-white mt-5 w-75 max-w-screen-sm text-center">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 
   Next generation digital banking
@@ -95,5 +132,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
